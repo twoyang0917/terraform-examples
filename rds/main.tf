@@ -46,10 +46,10 @@ data "aws_ssm_parameter" "dbpassword" {
   with_decryption = true
 }
 
-module "rds_mysql_wordpess" {
+module "rds_mysql_wordpress" {
   source = "terraform-aws-modules/rds/aws"
 
-  identifier = "rds-mysql-wordpess"
+  identifier = "rds-mysql-wordpress"
 
   snapshot_identifier = "${var.snapshot_identifier}"
 
@@ -92,7 +92,7 @@ resource "aws_ssm_parameter" "rds_wordpress_host" {
   name        = "/rds/wordpress/host"
   description = "the endpoint of wordpress rds"
   type        = "String"
-  value       = "${module.rds_mysql_wordpess.this_db_instance_address}"
+  value       = "${module.rds_mysql_wordpress.this_db_instance_address}"
 
   tags {
     Environment = "${var.environment}"
