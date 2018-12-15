@@ -8,10 +8,10 @@ variable "environment" {
   default     = "stg"
 }
 
-# variable "snapshot_identifier" {
-#   description = "create this database from specified snapshot"
-#   default     = ""
-# }
+variable "snapshot_identifier" {
+  description = "create this database from specified snapshot"
+  default     = ""
+}
 
 variable "engine" {
   description = "the engine of rds"
