@@ -51,7 +51,7 @@ module "rds_mysql_wordpress" {
 
   identifier = "rds-mysql-wordpress"
 
-  snapshot_identifier = "${var.snapshot_identifier}"
+  # snapshot_identifier = "${var.snapshot_identifier}"
 
   engine            = "${var.engine}"
   engine_version    = "${var.engine_version}"

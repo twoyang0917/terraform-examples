@@ -29,4 +29,4 @@ engine            = "mysql"
 engine_version    = "5.6.34"
 instance_class    = "db.m1.large"
 allocated_storage = 5
-snapshot_identifier = "rds-mysql-wordpess"
+# snapshot_identifier = "rds-mysql-wordpess"
