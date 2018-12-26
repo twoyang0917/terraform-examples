@@ -22,3 +22,5 @@ ssh -p 22 -i ~/.ssh/ansible ubuntu@public_ip
 cd /services/aws-bootstrap/
 ansible-playbook ansible/playbooks/bastion.yml
 ansible-playbook ansible/playbooks/wordpress.yml
+
+# open endpoint of the ALB on chrome.
